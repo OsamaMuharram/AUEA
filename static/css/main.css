@@ -1,0 +1,118 @@
+/* start reset rules */
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 ; 
+    padding: 0 ;
+    box-sizing: border-box;
+}
+/* end reset rules */
+
+html,body{
+    height: 100% ;
+}
+
+/* start container */
+.container{
+    height: 100%;
+    margin-bottom: -50px;
+}
+/* end container */
+
+/* start header */
+.container header{
+    height: 20vh;
+    display: flex;
+}
+.container header .left{
+    width: 30%;
+    /* top | right | bottom | left  */
+    padding: 10px 0px 0px 30px;  
+}
+.container header .left h1{
+    font-size: 100px;
+}
+
+.container header .right{
+    width: 70%;
+    font-size: 25px;
+    padding: 60px 50px 0px 0px;
+    text-align: right;
+}
+.container header .right nav ul{
+    list-style: none;
+}
+.container header .right nav ul li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px 10px 5px 10px ; 
+    margin-left: 20px;
+    transition: all 500ms;
+}
+.container header .right nav ul li:hover{
+    background-color: rebeccapurple;
+    border-radius: 10px;
+}
+.container header .right nav ul li:hover a{
+    color: #FFF;
+}
+.container header .right nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* end header */
+
+/* start intro */
+.container .intro{
+    height: 20vh;
+    line-height: 20vh;
+    text-align: center;
+    color: #FFF;
+    background-color: rebeccapurple;
+}
+.container .intro i{
+    font-size: 50px;
+    opacity: 0.5;
+}
+
+.container .intro p{
+    font-family: 'Special Elite', cursive;
+    font-size: 50px;
+}
+/* end intro */
+
+/* start guide */
+.container .guide{
+    height: 55vh;
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+}
+.container .guide > div{
+    width: 20%;
+    text-align: center;
+}
+.container .guide > div .step-number{
+    color:#cccccc ;
+    font-size: 50px; 
+}
+.container .guide > div .icon{
+    color:#3c3c3c ; 
+    font-size: 200px; 
+}
+
+.container .guide > div .info{
+    color:#663399; 
+}
+/* end guide */
+
+/* start footer */
+footer{
+    /* height: 50px; */
+    height: 5vh;
+    line-height: 50px;
+    text-align: center;
+    color: #797979;
+    background-color: #efefef;
+}
+/* end footer */
