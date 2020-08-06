@@ -1,5 +1,6 @@
 from django.db import models
-
+from django.conf import settings
+import os
 
 # Create your models here.
 
@@ -25,12 +26,24 @@ class cabinet(models.Model):
         if str(self.branuch_from) == 'None':
             self.Mgment_path = '' + str(self.Management_name)
             super().save(*args, **kwargs)
+
         else:
             self.Mgment_path = str(self.branuch_from) + '/' + str(self.Management_name)
             super().save(*args, **kwargs)
 
+    def create_dir(self):
+        path = settings.MEDIA_ROOT+self.Mgment_path
+        os.mkdir(path)
+        print(path)
+
     def __str__(self):
         return str(self.Mgment_path)
+
+    def get_absolute_url(self):
+        return "/display/%s/" % self.Management_name
+
+
+
 
 
 #كلاس الموظفين
