@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cabinet</title>
+</head>
+<body>
+{% for obj in object_list  %}
+   <a href="{{obj.get_absolute_url}}">{{obj.Management_name}}</a> <br>
+{% endfor %}
+<h1>you are in cabinet here </h1>
+</body>
+</html>

@@ -3,7 +3,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('document/',views.index,name='index'),
-    path('display/',views.display_document,name='display'),
-    path('display/<str:file>', views.display_selected_document, name='display'),
+    path('',views.index1,name='index1'),
+    path('<str:Management_name>/', views.show_element, name='show_element'),
+
+
 ]

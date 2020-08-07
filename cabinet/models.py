@@ -21,28 +21,27 @@ class cabinet(models.Model):
     Mgment_path = models.CharField(max_length=200,null=True,blank=True )
 
     #دالة الحصول على اسم الادارة من البرانش فروم واضافتها فى المسار
+    def create_dir(self):
+        path = settings.MEDIA_ROOT + self.Mgment_path
+        os.mkdir(path)
 
     def save(self, *args, **kwargs):
         if str(self.branuch_from) == 'None':
             self.Mgment_path = '' + str(self.Management_name)
+            os.mkdir(settings.MEDIA_ROOT + self.Mgment_path)
             super().save(*args, **kwargs)
 
         else:
             self.Mgment_path = str(self.branuch_from) + '/' + str(self.Management_name)
+            os.mkdir(settings.MEDIA_ROOT + self.Mgment_path)
             super().save(*args, **kwargs)
-
-    def create_dir(self):
-        path = settings.MEDIA_ROOT+self.Mgment_path
-        os.mkdir(path)
-        print(path)
 
     def __str__(self):
         return str(self.Mgment_path)
 
     def get_absolute_url(self):
-        return "/display/%s/" % self.Management_name
-
-
+        from django.urls import reverse
+        return reverse('show_element', args=[str(self.Management_name)])
 
 
 

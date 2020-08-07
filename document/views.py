@@ -6,8 +6,6 @@ from cabinet.models import cabinet
 
 def index(request):
 
-    def os():
-        pass
     return render(request, 'document/index.html', {'':''})
 
 
