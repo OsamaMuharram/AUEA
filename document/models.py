@@ -1,5 +1,5 @@
 from django.db import models
-
+from taggit.managers import TaggableManager
 from cabinet.models import employee ,cabinet
 # Create your models here.
 def Management_path(instance, filename):
@@ -32,8 +32,8 @@ class preparator_document(models.Model):
                                        on_delete=models.CASCADE, )
     boss_name=models.CharField(max_length=150)
     meeting_type=models.CharField(max_length=150)
-    Event_date=models.DateField(auto_now=True)
     create_date = models.DateField()
-
+    published = models.DateField(auto_now_add=True)
+    tags=models
     def __str__(self):
         return str(self.title)

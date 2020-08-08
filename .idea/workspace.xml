@@ -11,16 +11,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbf61555-5bc1-464f-87e2-d6d6b74c159f" name="Default Changelist" comment="add html pages">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cabinet/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/document/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/document/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/document/migrations/0002_preparator_document.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/document/migrations/0003_preparator_document_published.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tags/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tags/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tags/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tags/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tags/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tags/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cabinet/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cabinet/migrations/0002_auto_20200808_0055.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/document/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/migrations/0002_auto_20200808_0055.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/migrations/0003_preparator_dcument.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/migrations/0004_auto_20200808_0113.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/migrations/0005_preparator_dcument_event_date.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,16 +53,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fhSwSrIGzQzphqnaU3DEm27oYQ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -181,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596852787710</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="upgrade django  to 3.1">
+      <created>1596859066396</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1596859066396</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +216,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
@@ -210,17 +230,18 @@
     <MESSAGE value="cabinet database complete" />
     <MESSAGE value="create document types models" />
     <MESSAGE value="add html pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="add html pages" />
+    <MESSAGE value="upgrade django  to 3.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgrade django  to 3.1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="566" y="245" width="408" height="365" key="#Notifications" timestamp="1596726965133">
       <screen x="0" y="0" width="1366" height="739" />
     </state>
     <state x="566" y="245" width="408" height="365" key="#Notifications/0.0.1366.739@0.0.1366.739" timestamp="1596726965133" />
-    <state x="466" y="128" width="430" height="482" key="FileChooserDialogImpl" timestamp="1596729342269">
+    <state x="466" y="128" width="430" height="482" key="FileChooserDialogImpl" timestamp="1596898931466">
       <screen x="0" y="0" width="1366" height="739" />
     </state>
-    <state x="466" y="128" width="430" height="482" key="FileChooserDialogImpl/0.0.1366.739@0.0.1366.739" timestamp="1596729342269" />
+    <state x="466" y="128" width="430" height="482" key="FileChooserDialogImpl/0.0.1366.739@0.0.1366.739" timestamp="1596898931466" />
     <state x="470" y="71" width="413" height="586" key="RollbackChangesDialog" timestamp="1596726184063">
       <screen x="0" y="0" width="1366" height="739" />
     </state>
@@ -229,10 +250,10 @@
       <screen x="0" y="0" width="1366" height="739" />
     </state>
     <state x="187" y="5" key="SettingsEditor/0.0.1366.739@0.0.1366.739" timestamp="1596858732051" />
-    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2" timestamp="1596852793453">
+    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2" timestamp="1596859072884">
       <screen x="0" y="0" width="1366" height="739" />
     </state>
-    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2/0.0.1366.739@0.0.1366.739" timestamp="1596852793453" />
+    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2/0.0.1366.739@0.0.1366.739" timestamp="1596859072884" />
     <state x="97" y="99" width="1172" height="543" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596727983958">
       <screen x="0" y="0" width="1366" height="739" />
     </state>

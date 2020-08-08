@@ -3,7 +3,7 @@ from django.conf import settings
 from django.http import HttpResponse
 from django.shortcuts import render
 from cabinet.models import cabinet
-from .models import document
+from .models import document,document_type,preparator_document
 
 
 def index(request):
@@ -14,4 +14,3 @@ def index(request):
     context={'document_list':document_list,'path':path,'cabinet_list':cabinet_list}
 
     return render(request, 'document/index.html', context)
-
