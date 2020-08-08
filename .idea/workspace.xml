@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bbf61555-5bc1-464f-87e2-d6d6b74c159f" name="Default Changelist" comment="cabinet database complete">
+      <change beforePath="$PROJECT_DIR$/cabinet/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cabinet/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cabinet/templates/cabinet/show_element.html" beforeDir="false" afterPath="$PROJECT_DIR$/cabinet/templates/cabinet/show_element.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cabinet/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cabinet/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/templates/document/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/document/templates/document/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fhSwSrIGzQzphqnaU3DEm27oYQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbf61555-5bc1-464f-87e2-d6d6b74c159f" name="Default Changelist" comment="" />
+      <created>1596669069828</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596669069828</updated>
+    </task>
+    <task id="LOCAL-00001" summary="frist commit">
+      <created>1596679707907</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596679707907</updated>
+    </task>
+    <task id="LOCAL-00002" summary="frist commit">
+      <created>1596679852874</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596679852874</updated>
+    </task>
+    <task id="LOCAL-00003" summary="second commit">
+      <created>1596731486335</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596731486335</updated>
+    </task>
+    <task id="LOCAL-00004" summary="third commit">
+      <created>1596732577318</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1596732577318</updated>
+    </task>
+    <task id="LOCAL-00005" summary="third commit">
+      <created>1596732820264</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596732820264</updated>
+    </task>
+    <task id="LOCAL-00006" summary="third commit">
+      <created>1596733068730</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596733068730</updated>
+    </task>
+    <task id="LOCAL-00007" summary="third commit">
+      <created>1596733098696</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596733098696</updated>
+    </task>
+    <task id="LOCAL-00008" summary="third commit">
+      <created>1596733192649</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1596733192649</updated>
+    </task>
+    <task id="LOCAL-00009" summary="third commit">
+      <created>1596733349661</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1596733349661</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test">
+      <created>1596734370697</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1596734370697</updated>
+    </task>
+    <task id="LOCAL-00011" summary="create another app 'home'">
+      <created>1596738250217</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1596738250217</updated>
+    </task>
+    <task id="LOCAL-00012" summary="url configurations">
+      <created>1596739154868</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1596739154868</updated>
+    </task>
+    <task id="LOCAL-00013" summary="cabinet database complete">
+      <created>1596764188890</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1596764188890</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="frist commit" />
+    <MESSAGE value="create django project" />
+    <MESSAGE value="second commit" />
+    <MESSAGE value="third commit" />
+    <MESSAGE value="test" />
+    <MESSAGE value="create another app 'home'" />
+    <MESSAGE value="url configurations" />
+    <MESSAGE value="cabinet database complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="cabinet database complete" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="566" y="245" width="408" height="365" key="#Notifications" timestamp="1596726965133">
+      <screen x="0" y="0" width="1366" height="739" />
+    </state>
+    <state x="566" y="245" width="408" height="365" key="#Notifications/0.0.1366.739@0.0.1366.739" timestamp="1596726965133" />
+    <state x="466" y="128" width="430" height="482" key="FileChooserDialogImpl" timestamp="1596729342269">
+      <screen x="0" y="0" width="1366" height="739" />
+    </state>
+    <state x="466" y="128" width="430" height="482" key="FileChooserDialogImpl/0.0.1366.739@0.0.1366.739" timestamp="1596729342269" />
+    <state x="470" y="71" width="413" height="586" key="RollbackChangesDialog" timestamp="1596726184063">
+      <screen x="0" y="0" width="1366" height="739" />
+    </state>
+    <state x="470" y="71" width="413" height="586" key="RollbackChangesDialog/0.0.1366.739@0.0.1366.739" timestamp="1596726184063" />
+    <state x="187" y="5" key="SettingsEditor" timestamp="1596728076027">
+      <screen x="0" y="0" width="1366" height="739" />
+    </state>
+    <state x="187" y="5" key="SettingsEditor/0.0.1366.739@0.0.1366.739" timestamp="1596728076027" />
+    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2" timestamp="1596764195234">
+      <screen x="0" y="0" width="1366" height="739" />
+    </state>
+    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2/0.0.1366.739@0.0.1366.739" timestamp="1596764195234" />
+    <state x="97" y="99" width="1172" height="543" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596727983958">
+      <screen x="0" y="0" width="1366" height="739" />
+    </state>
+    <state x="97" y="99" width="1172" height="543" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.739@0.0.1366.739" timestamp="1596727983958" />
+    <state x="495" y="108" width="371" height="523" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1596679812776">
+      <screen x="0" y="0" width="1366" height="739" />
+    </state>
+    <state x="495" y="108" width="371" height="523" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.739@0.0.1366.739" timestamp="1596679812776" />
+    <state x="477" y="282" width="399" height="164" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596732781385">
+      <screen x="0" y="0" width="1366" height="739" />
+    </state>
+    <state x="477" y="282" width="399" height="164" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.739@0.0.1366.739" timestamp="1596732781385" />
+    <state x="282" y="162" width="797" height="415" key="git4idea.merge.GitPullDialog" timestamp="1596727307637">
+      <screen x="0" y="0" width="1366" height="739" />
+    </state>
+    <state x="282" y="162" width="797" height="415" key="git4idea.merge.GitPullDialog/0.0.1366.739@0.0.1366.739" timestamp="1596727307637" />
+    <state x="430" y="269" width="494" height="189" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596731430874">
+      <screen x="0" y="0" width="1366" height="739" />
+    </state>
+    <state x="430" y="269" width="494" height="189" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.739@0.0.1366.739" timestamp="1596731430874" />
+    <state x="346" y="60" width="672" height="678" key="search.everywhere.popup" timestamp="1596834067684">
+      <screen x="0" y="0" width="1366" height="739" />
+    </state>
+    <state x="346" y="60" width="672" height="678" key="search.everywhere.popup/0.0.1366.739@0.0.1366.739" timestamp="1596834067684" />
+    <state x="516" y="164" width="330" height="410" key="svn.repositoryBrowser" timestamp="1596727983505">
+      <screen x="0" y="0" width="1366" height="739" />
+    </state>
+    <state x="516" y="164" width="330" height="410" key="svn.repositoryBrowser/0.0.1366.739@0.0.1366.739" timestamp="1596727983505" />
+    <state x="422" y="146" width="514" height="445" key="svn4idea.import.options" timestamp="1596727889069">
+      <screen x="0" y="0" width="1366" height="739" />
+    </state>
+    <state x="422" y="146" width="514" height="445" key="svn4idea.import.options/0.0.1366.739@0.0.1366.739" timestamp="1596727889069" />
+  </component>
+</project>

@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html lang="en">
+<html>
+    <head>
+        <title> osama </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{%static 'css/style_1.css'%}">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    </head>
+    <body>
+        <div class="w3-bar w3-light-grey">
+          <a href="/home" class="w3-bar-item w3-button">Home</a>
+          <a href="/document/" class="w3-bar-item w3-button">document</a>
+          <a href="/cabinet/" class="w3-bar-item w3-button">cabients</a>
+          <a href="#" class="w3-bar-item w3-button">page 2</a>
+        </div>
+
+        <div class="container">
+            <div class="title">
+                <h2> Details Of Cabinet </h2>
+            </div>
+            <div class="nav-menue">
+                <ul>
+                    {% for obj in cabinet_list%}
+                    <li> {{obj.Management_name }}</li>
+                  {%endfor%}
+                </ul>
+            </div>
+
+
+            <div class="main-section">
+                <div class="user-action">
+                    <form action="#">
+                        <label for="options"> Action : </label>
+                        <select id="options" name="options">
+                        <option value="one"> First Option </option>
+                        <option value="two"> Second Option </option>
+                        <option value="three">Third Option </option>
+                        </select>
+                        <input type="submit">
+                    </form>
+                </div>
+
+  {% block body %}
+    
+  {% endblock body %}
+    
+        </div>
+
+    </body>
+</html>
