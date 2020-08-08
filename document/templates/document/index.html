@@ -1,60 +1,28 @@
-
-<!DOCTYPE html>
+{% extends 'base.html' %}
 {% load static %}
-{% load bootstrap4 %}
+  {% block body %}
+  <form action="#">
+                    <div class="preview">
 
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title> General Questions </title>
-        <!-- font awsome -->
-        <script src="https://kit.fontawesome.com/e6940d366b.js" crossorigin="anonymous"></script>
-        <!-- fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Special+Elite&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap">
-        <!-- css -->
-        <link rel="stylesheet" href="{% static "css/main.css" %}">
-    </head>
-    <body>
-        <!-- start container -->
-        <div class="container">
-            <!-- start header -->
-            <header>
-                <div class="left">
-                    <h1> GQ </h1>
-                </div>
-                <div class="right">
-                    <nav>
-                        <ul>
-                            <li> <a href="#"> About </a></li>
-                            <li> <a href="#"> Contact Us </a></li>
-                            <li> <a href="file:///home/osama/General_Knowledge/login.html"> Login </a></li>
-                            <li> <a href="file:///home/osama/General_Knowledge/sign_up.html"> Sign Up </a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <!-- end header -->
-            <!-- start intro -->
-            <div class="intro">
-                <p>
-                    <i class="fas fa-quote-left"></i>
-                    <i class="fas fa-quote-right"></i> </p>
-            </div>
-            <!-- end intro -->
-            <!-- start guide -->
+                        {%for obj in document_list%}
+                    <!-- start an item  -->
+                        <div class="item">
+                            <div class="top">
+                                <input type="checkbox" id="one" name="one" value="one">
+                                <label> {{obj.name}} </label>
+                            </div>
+                            <div class="image">
+                                <a href="{{ obj.file_uploded.url }}"><img src="{{ obj.file_uploded.url }}" alt="image" ></a>
+                            </div>
+                            <!-- <input type="submit" value="Submit"> -->
+                        </div>
+                        {%endfor%}
+                    </form>
+
 
             </div>
-        </div>
-        <!-- end container -->
 
-        <!-- start footer -->
-        <footer>
-            <p> created by ahmedhamdy and osama mouharam </p>
-        </footer>
-        <!-- end footer -->
+{% endblock body %}
 
-        <!-- javascript -->
-        <script src="{% static "js/main.js"%}"></body>
-    </body>
-</html>
+
+

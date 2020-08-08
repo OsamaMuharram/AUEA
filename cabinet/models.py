@@ -4,7 +4,6 @@ import os
 
 # Create your models here.
 
-
 class cabinet(models.Model):
 
     Management_name = models.CharField(max_length=30)
@@ -42,8 +41,6 @@ class cabinet(models.Model):
     def get_absolute_url(self):
         from django.urls import reverse
         return reverse('show_element', args=[str(self.Management_name)])
-
-
 
 #كلاس الموظفين
 class employee(models.Model):
