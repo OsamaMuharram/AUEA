@@ -10,12 +10,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbf61555-5bc1-464f-87e2-d6d6b74c159f" name="Default Changelist" comment="cabinet database complete">
-      <change beforePath="$PROJECT_DIR$/cabinet/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cabinet/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cabinet/templates/cabinet/show_element.html" beforeDir="false" afterPath="$PROJECT_DIR$/cabinet/templates/cabinet/show_element.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cabinet/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cabinet/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/templates/document/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/document/templates/document/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/index.html" afterDir="false" />
+    <list default="true" id="bbf61555-5bc1-464f-87e2-d6d6b74c159f" name="Default Changelist" comment="add html pages">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cabinet/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cabinet/migrations/0002_auto_20200808_0055.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/migrations/0002_auto_20200808_0055.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/migrations/0003_preparator_dcument.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/migrations/0004_auto_20200808_0113.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/migrations/0005_preparator_dcument_event_date.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +56,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
@@ -155,7 +160,28 @@
       <option name="project" value="LOCAL" />
       <updated>1596764188890</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="create document types models">
+      <created>1596852504618</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1596852504619</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add html pages">
+      <created>1596852656424</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1596852656424</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add html pages">
+      <created>1596852787710</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1596852787710</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,7 +208,9 @@
     <MESSAGE value="create another app 'home'" />
     <MESSAGE value="url configurations" />
     <MESSAGE value="cabinet database complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="cabinet database complete" />
+    <MESSAGE value="create document types models" />
+    <MESSAGE value="add html pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="add html pages" />
   </component>
   <component name="WindowStateProjectService">
     <state x="566" y="245" width="408" height="365" key="#Notifications" timestamp="1596726965133">
@@ -197,14 +225,14 @@
       <screen x="0" y="0" width="1366" height="739" />
     </state>
     <state x="470" y="71" width="413" height="586" key="RollbackChangesDialog/0.0.1366.739@0.0.1366.739" timestamp="1596726184063" />
-    <state x="187" y="5" key="SettingsEditor" timestamp="1596728076027">
+    <state x="187" y="5" key="SettingsEditor" timestamp="1596858732051">
       <screen x="0" y="0" width="1366" height="739" />
     </state>
-    <state x="187" y="5" key="SettingsEditor/0.0.1366.739@0.0.1366.739" timestamp="1596728076027" />
-    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2" timestamp="1596764195234">
+    <state x="187" y="5" key="SettingsEditor/0.0.1366.739@0.0.1366.739" timestamp="1596858732051" />
+    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2" timestamp="1596852793453">
       <screen x="0" y="0" width="1366" height="739" />
     </state>
-    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2/0.0.1366.739@0.0.1366.739" timestamp="1596764195234" />
+    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2/0.0.1366.739@0.0.1366.739" timestamp="1596852793453" />
     <state x="97" y="99" width="1172" height="543" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596727983958">
       <screen x="0" y="0" width="1366" height="739" />
     </state>
