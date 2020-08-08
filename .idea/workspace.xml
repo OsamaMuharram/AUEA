@@ -11,24 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbf61555-5bc1-464f-87e2-d6d6b74c159f" name="Default Changelist" comment="add html pages">
-      <change afterPath="$PROJECT_DIR$/cabinet/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/document/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/document/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/document/migrations/0002_preparator_document.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/document/migrations/0003_preparator_document_published.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tags/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tags/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tags/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tags/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tags/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tags/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tags/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cabinet/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/cabinet/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/document/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/migrations/0002_preparator_document.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/migrations/0003_preparator_document_published.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/document/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/document/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596859066396</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="create Tags app">
+      <created>1596905712783</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1596905712784</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,7 +230,8 @@
     <MESSAGE value="create document types models" />
     <MESSAGE value="add html pages" />
     <MESSAGE value="upgrade django  to 3.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="upgrade django  to 3.1" />
+    <MESSAGE value="create Tags app" />
+    <option name="LAST_COMMIT_MESSAGE" value="create Tags app" />
   </component>
   <component name="WindowStateProjectService">
     <state x="566" y="245" width="408" height="365" key="#Notifications" timestamp="1596726965133">
@@ -250,10 +250,10 @@
       <screen x="0" y="0" width="1366" height="739" />
     </state>
     <state x="187" y="5" key="SettingsEditor/0.0.1366.739@0.0.1366.739" timestamp="1596858732051" />
-    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2" timestamp="1596859072884">
+    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2" timestamp="1596905723978">
       <screen x="0" y="0" width="1366" height="739" />
     </state>
-    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2/0.0.1366.739@0.0.1366.739" timestamp="1596859072884" />
+    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2/0.0.1366.739@0.0.1366.739" timestamp="1596905723978" />
     <state x="97" y="99" width="1172" height="543" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596727983958">
       <screen x="0" y="0" width="1366" height="739" />
     </state>

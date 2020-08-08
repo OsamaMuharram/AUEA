@@ -1,5 +1,5 @@
+import uuid
 from django.db import models
-from taggit.managers import TaggableManager
 from cabinet.models import employee ,cabinet
 # Create your models here.
 def Management_path(instance, filename):
@@ -25,15 +25,106 @@ class document_type(models.Model):
         return str(self.name)
 
 
-class preparator_document(models.Model):
+
+
+class parent_document(models.Model):
     title = models.CharField(max_length=150)
     description=models.CharField(max_length=500)
     management_name = models.ForeignKey('cabinet.cabinet',
                                        on_delete=models.CASCADE, )
-    boss_name=models.CharField(max_length=150)
-    meeting_type=models.CharField(max_length=150)
-    create_date = models.DateField()
+    event_date = models.DateField()
     published = models.DateField(auto_now_add=True)
-    tags=models
+    tags = models.ManyToManyField('tags.Tags')
+    class Meta:
+        abstract = True
     def __str__(self):
         return str(self.title)
+
+
+
+    """
+     /
+    /
+    /
+    create preparator table 
+    /
+    /
+    /
+    """
+class preparator_document(parent_document):
+    boss_name=models.CharField(max_length=150)
+    meeting_type=models.CharField(max_length=150)
+    def __str__(self):
+        return str(self.title)
+
+
+    """
+     /
+    /
+    /
+    create decision_document table 
+    /
+    /
+    /
+    """
+class decision_document(parent_document):
+    boss_name=models.CharField(max_length=150)
+    decision_type=models.CharField(max_length=150)
+    def __str__(self):
+        return str(self.title)
+
+
+    """
+     /
+    /
+    /
+    create Correspondence_document table 
+    /
+    /
+    /
+    """
+class Correspondence_document(parent_document):
+    Issuer=models.CharField(max_length=150)
+    Destination=models.CharField(max_length=150)
+    def __str__(self):
+        return str(self.title)
+
+
+
+    """
+    /
+    /
+    /
+    /
+    
+    create report_document table
+    /
+    /
+    /
+    /
+    """
+
+class report_document(parent_document):
+    #جهة الاصدار
+    Issuer=models.CharField(max_length=150)
+    Destination=models.CharField(max_length=150)
+    def __str__(self):
+        return str(self.title)
+
+    """
+     /
+    /
+    /
+    create warrant_document table 
+    /
+    /
+    /
+    """
+
+class warrant_document(parent_document):
+    warrant_creator = models.CharField(max_length=150)
+    Destination = models.CharField(max_length=150)
+
+    def __str__(self):
+        return str(self.title)
+
