@@ -30,17 +30,14 @@ class document_type(models.Model):
 class parent_document(models.Model):
     title = models.CharField(max_length=150)
     description=models.CharField(max_length=500)
-    management_name = models.ForeignKey('cabinet.cabinet',
-                                       on_delete=models.CASCADE, )
     event_date = models.DateField()
     published = models.DateField(auto_now_add=True)
-    tags = models.ManyToManyField('tags.Tags')
-    class Meta:
-        abstract = True
+    select_cabinet = models.ForeignKey('cabinet.cabinet',
+                                       on_delete=models.CASCADE, )
+    file_uploded = models.FileField(upload_to=Management_path)
+
     def __str__(self):
         return str(self.title)
-
-
 
     """
      /
@@ -54,8 +51,6 @@ class parent_document(models.Model):
 class preparator_document(parent_document):
     boss_name=models.CharField(max_length=150)
     meeting_type=models.CharField(max_length=150)
-    def __str__(self):
-        return str(self.title)
 
 
     """
@@ -70,9 +65,6 @@ class preparator_document(parent_document):
 class decision_document(parent_document):
     boss_name=models.CharField(max_length=150)
     decision_type=models.CharField(max_length=150)
-    def __str__(self):
-        return str(self.title)
-
 
     """
      /
@@ -86,10 +78,6 @@ class decision_document(parent_document):
 class Correspondence_document(parent_document):
     Issuer=models.CharField(max_length=150)
     Destination=models.CharField(max_length=150)
-    def __str__(self):
-        return str(self.title)
-
-
 
     """
     /
@@ -108,8 +96,6 @@ class report_document(parent_document):
     #جهة الاصدار
     Issuer=models.CharField(max_length=150)
     Destination=models.CharField(max_length=150)
-    def __str__(self):
-        return str(self.title)
 
     """
      /
@@ -122,9 +108,7 @@ class report_document(parent_document):
     """
 
 class warrant_document(parent_document):
-    warrant_creator = models.CharField(max_length=150)
-    Destination = models.CharField(max_length=150)
-
-    def __str__(self):
-        return str(self.title)
+    #جهة الاصدار
+    Issuer=models.CharField(max_length=150)
+    Destination=models.CharField(max_length=150)
 
