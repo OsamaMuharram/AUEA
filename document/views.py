@@ -14,3 +14,12 @@ def index(request):
     context={'document_list':document_list,'path':path,'cabinet_list':cabinet_list}
 
     return render(request, 'document/index.html', context)
+
+def test(request):
+    cabinet_list = cabinet.objects.all()
+    document_list=parent_document.objects.all()
+    path = settings.MEDIA_ROOT
+
+    context={'document_list':document_list,'path':path,'cabinet_list':cabinet_list}
+
+    return render(request, 'document/index.html', context)

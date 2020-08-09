@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.shortcuts import render
 from.models import cabinet
-from document.models import document
+from document.models import parent_document
 import os
 
 
@@ -22,7 +22,7 @@ def show_element(request,Management_name):
             dir_list.append(filename)"""
 
     #ارجاع كل المستندات الموجوده فى قاعدة البيانات الخاصة بالوثائق ووضعها تحت المجلد الخاص بها
-    object_list_from_db=document.objects.filter(select_cabinet__Management_name=Management_name)
+    object_list_from_db=parent_document.objects.filter(select_cabinet__Management_name=Management_name)
 
     name = Management_name
 

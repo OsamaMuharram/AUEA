@@ -25,8 +25,6 @@ class document_type(models.Model):
         return str(self.name)
 
 
-
-
 class parent_document(models.Model):
     title = models.CharField(max_length=150)
     description=models.CharField(max_length=500)
@@ -39,57 +37,31 @@ class parent_document(models.Model):
     def __str__(self):
         return str(self.title)
 
+    """////////////////////////////////////////"""
     """
-     /
-    /
-    /
     create preparator table 
-    /
-    /
-    /
+
     """
 class preparator_document(parent_document):
     boss_name=models.CharField(max_length=150)
     meeting_type=models.CharField(max_length=150)
 
-
     """
-     /
-    /
-    /
     create decision_document table 
-    /
-    /
-    /
     """
 class decision_document(parent_document):
     boss_name=models.CharField(max_length=150)
     decision_type=models.CharField(max_length=150)
 
     """
-     /
-    /
-    /
     create Correspondence_document table 
-    /
-    /
-    /
     """
 class Correspondence_document(parent_document):
     Issuer=models.CharField(max_length=150)
     Destination=models.CharField(max_length=150)
 
     """
-    /
-    /
-    /
-    /
-    
     create report_document table
-    /
-    /
-    /
-    /
     """
 
 class report_document(parent_document):
@@ -98,17 +70,10 @@ class report_document(parent_document):
     Destination=models.CharField(max_length=150)
 
     """
-     /
-    /
-    /
     create warrant_document table 
-    /
-    /
-    /
     """
-
 class warrant_document(parent_document):
     #جهة الاصدار
     Issuer=models.CharField(max_length=150)
     Destination=models.CharField(max_length=150)
-
+""""///////////////////////////////////////////////"""
