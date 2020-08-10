@@ -22,4 +22,4 @@ def test(request):
 
     context={'document_list':document_list,'path':path,'cabinet_list':cabinet_list}
 
-    return render(request, 'document/index.html', context)
+    return render(request, 'document/test.html', context)
