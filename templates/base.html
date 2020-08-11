@@ -1,52 +1,65 @@
-{% load static %}
-<!DOCTYPE html lang="en">
+<!DOCTYPE html>
 <html>
-    <head>
-        <title> osama </title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="{%static 'css/style_1.css'%}">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-    </head>
-    <body>
-        <div class="w3-bar w3-light-grey">
-          <a href="/home" class="w3-bar-item w3-button">Home</a>
-          <a href="/document/" class="w3-bar-item w3-button">document</a>
-          <a href="/cabinet/" class="w3-bar-item w3-button">cabients</a>
-          <a href="#" class="w3-bar-item w3-button">Tags</a>
-        </div>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <<div><i class="fa fa-user fa-2x" aria-hidden="true"></i>
+</div>
+    <h4><b>user name : {{ user.get_username }}</b></h4>
+    <p class="w3-text-grey">Edit profile</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Documents</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>My Actions</a>
+  </div>
+{% if user.is_authenticated %}
+         <li> <i class="fa fa-sign-in"></i> <a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
+       {% else %}
+         <li> <i class="fa fa-sign-in"></i> <a href="{% url 'login'%}?next={{request.path}}">Login</a></li>
+       {% endif %}
+      </ul>
+</nav>
 
-        <div class="container">
-            <div class="title">
-                <h2> Details Of Cabinet </h2>
-            </div>
-            <div class="nav-menue">
-                <ul>
-                    {% for obj in cabinet_list%}
-                    <li> {{obj.Management_name }}</li>
-                  {%endfor%}
-                </ul>
-            </div>
+<!-- Overlay effect when opening sidebar on small screens -->
 
 
-            <div class="main-section">
-                <div class="user-action">
-                    <form action="#">
-                        <label for="options"> Action : </label>
-                        <select id="options" name="options">
-                        <option value="one"> First Option </option>
-                        <option value="two"> Second Option </option>
-                        <option value="three">Third Option </option>
-                        </select>
-                        <input type="submit">
-                    </form>
-                </div>
+<!-- First documents Grid-->
+ {% block body %}
 
-  {% block body %}
-    
-  {% endblock body %}
-    
-        </div>
+{% endblock body %}
 
-    </body>
+
+
+  <!-- Footer -->
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
 </html>

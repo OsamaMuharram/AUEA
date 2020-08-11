@@ -6,18 +6,21 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="{%static 'css/style_1.css'%}">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
 
-    </head>
-    <body>
-        <div class="w3-bar w3-light-grey">
-          <a href="/home" class="w3-bar-item w3-button">Home</a>
-          <a href="/document/" class="w3-bar-item w3-button">document</a>
-          <a href="/cabinet/" class="w3-bar-item w3-button">cabients</a>
-          <a href="#" class="w3-bar-item w3-button">Tags</a>
-        </div>
+    <ul class="sidebar-nav">
+        ...
 
-
-
+       {% if user.is_authenticated %}
+         <li>User: {{ user.get_username }}</li>
+         <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
+       {% else %}
+         <li><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>
+       {% endif %}
+      </ul>
   {% block body %}
 
   {% endblock body %}

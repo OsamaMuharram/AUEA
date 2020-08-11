@@ -4,22 +4,94 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from cabinet.models import cabinet
 from .models import document,document_type,parent_document
+from django.contrib.auth.decorators import login_required,permission_required
+from .forms import *
 
-
+@login_required
 def index(request):
     cabinet_list = cabinet.objects.all()
     document_list=parent_document.objects.all()
-    path = settings.MEDIA_ROOT
 
-    context={'document_list':document_list,'path':path,'cabinet_list':cabinet_list}
+    context={'document_list':document_list,'cabinet_list':cabinet_list}
 
     return render(request, 'document/index.html', context)
 
+@permission_required('auth.delete_user')
+@login_required
 def test(request):
     cabinet_list = cabinet.objects.all()
     document_list=parent_document.objects.all()
-    path = settings.MEDIA_ROOT
 
-    context={'document_list':document_list,'path':path,'cabinet_list':cabinet_list}
 
+    context={'document_list':document_list,'cabinet_list':cabinet_list}
     return render(request, 'document/test.html', context)
+
+@permission_required('auth.delete_user')
+@login_required
+def document_type(request):
+
+    context = {}
+    return render(request, 'document/choose_document_type.html', context)
+
+
+
+@login_required
+def add_warrant(request):
+    if request.method == 'POST':
+        myform = warrant_form(request.POST, request.FILES)
+        if myform.is_valid():
+            myform.save()
+    else:
+        myform = warrant_form()
+    context = {'myform': myform}
+    return render(request, 'document/add_warrant.html', context)
+
+
+@login_required
+def add_decision(request):
+    if request.method == 'POST':
+        myform = decision_form(request.POST, request.FILES)
+        if myform.is_valid():
+            myform.save(commit=False)
+
+    else:
+        myform = decision_form()
+    context = {'myform': myform}
+    return render(request, 'document/add_decision.html', context)
+
+@login_required
+def add_preparator(request):
+    if request.method == 'POST':
+        myform = preparator_form(request.POST, request.FILES)
+        if myform.is_valid():
+            myform.save(commit=False)
+
+    else:
+        myform = preparator_form()
+    context = {'myform': myform}
+    return render(request, 'document/add_preparator.html', context)
+
+@login_required
+def add_report(request):
+    if request.method == 'POST':
+        myform = report_form(request.POST, request.FILES)
+        if myform.is_valid():
+            myform.save(commit=False)
+    else:
+        myform = report_form()
+    context = {'myform': myform}
+    return render(request, 'document/add_report.html', context)
+
+
+@login_required
+def add_correspondence(request):
+    if request.method == 'POST':
+        myform = correspondence_form(request.POST,request.FILES)
+        if myform.is_valid():
+            myform.save()
+            print('hoooooooooooooooooooooooo')
+
+    else:
+        myform = correspondence_form()
+    context = {'myform': myform}
+    return render(request, 'document/add_correspondence.html', context)

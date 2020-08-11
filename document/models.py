@@ -56,7 +56,7 @@ class decision_document(parent_document):
     """
     create Correspondence_document table 
     """
-class Correspondence_document(parent_document):
+class correspondence_document(parent_document):
     Issuer=models.CharField(max_length=150)
     Destination=models.CharField(max_length=150)
 
