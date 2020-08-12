@@ -24,14 +24,13 @@
     </div>
     </div>
   </header>
+
+
 <div class="w3-row-padding">
-  {%for obj in document_list%}
+  {%for obj in document_obj%}
     <div class="w3-third w3-container w3-margin-bottom">
       <a href="{{ obj.file_uploded.url }}">
-
         <img src="{{ obj.file_uploded.url }}" alt="image" style="width:100%" class="w3-hover-opacity">
-
-
       </a>
       <div class="w3-container w3-white">
         <p><b>{{obj.title}}</b></p>
@@ -41,16 +40,23 @@
   {%endfor%}
      </div>
   <!-- Pagination -->
+  {%  if document_obj.has_other_pages%}
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+         {%if document_obj.has_previous%}
+          <a href="?page={{ document_obj.previous_page_number }}" class="w3-bar-item w3-button w3-hover-black">«</a>
+          {%endif%}
+       {%for i in document_obj.paginator.page_range %}
+      <a href="?page={{i}}" class="w3-bar-item w3-hover-black w3-button">{{i}}</a>
+      {%endfor%}
+
+         {%if document_obj.has_next%}
+         <a href="?page={{ document_obj.next_page_number }}" class="w3-bar-item w3-button w3-hover-black">»</a>
+         {%endif%}
     </div>
   </div>
+{% endif%}
+
  <footer class="w3-container w3-padding-32 w3-dark-grey">
   <div class="w3-row-padding">
     <div class="w3-third">

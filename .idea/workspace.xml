@@ -11,34 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbf61555-5bc1-464f-87e2-d6d6b74c159f" name="Default Changelist" comment="add html pages">
-      <change afterPath="$PROJECT_DIR$/accounts/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/templates/profile/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/document/templates/document/add_correspondence.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/document/templates/document/add_decision.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/document/templates/document/add_preparator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/document/templates/document/add_report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/document/templates/document/add_warrant.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/document/templates/document/choose_document_type.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myapp_models.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/templates/document/add_decision.html" beforeDir="false" afterPath="$PROJECT_DIR$/document/templates/document/add_decision.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/templates/document/add_preparator.html" beforeDir="false" afterPath="$PROJECT_DIR$/document/templates/document/add_preparator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/templates/document/add_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/document/templates/document/add_report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/templates/document/add_warrant.html" beforeDir="false" afterPath="$PROJECT_DIR$/document/templates/document/add_warrant.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/document/templates/document/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/document/templates/document/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/templates/document/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/document/templates/document/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/document/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/document/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style_1.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style_1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accounts_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597025513355</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add accounts and permisiions&#10;add forms from documents models&#10;coustmize ui">
+      <created>1597116988251</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1597116988251</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,7 +275,8 @@
     <MESSAGE value="documents type models created and requested those into html" />
     <MESSAGE value="test new template" />
     <MESSAGE value="create initial accounts system" />
-    <option name="LAST_COMMIT_MESSAGE" value="create initial accounts system" />
+    <MESSAGE value="add accounts and permisiions&#10;add forms from documents models&#10;coustmize ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="add accounts and permisiions&#10;add forms from documents models&#10;coustmize ui" />
   </component>
   <component name="WindowStateProjectService">
     <state x="566" y="245" width="408" height="365" key="#Notifications" timestamp="1596726965133">
@@ -301,14 +291,14 @@
       <screen x="0" y="0" width="1366" height="739" />
     </state>
     <state x="470" y="71" width="413" height="586" key="RollbackChangesDialog/0.0.1366.739@0.0.1366.739" timestamp="1596726184063" />
-    <state x="187" y="5" key="SettingsEditor" timestamp="1597112270940">
+    <state x="187" y="5" key="SettingsEditor" timestamp="1597162392610">
       <screen x="0" y="0" width="1366" height="739" />
     </state>
-    <state x="187" y="5" key="SettingsEditor/0.0.1366.739@0.0.1366.739" timestamp="1597112270940" />
-    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2" timestamp="1597025518765">
+    <state x="187" y="5" key="SettingsEditor/0.0.1366.739@0.0.1366.739" timestamp="1597162392610" />
+    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2" timestamp="1597116996548">
       <screen x="0" y="0" width="1366" height="739" />
     </state>
-    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2/0.0.1366.739@0.0.1366.739" timestamp="1597025518765" />
+    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2/0.0.1366.739@0.0.1366.739" timestamp="1597116996548" />
     <state x="97" y="99" width="1172" height="543" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596727983958">
       <screen x="0" y="0" width="1366" height="739" />
     </state>

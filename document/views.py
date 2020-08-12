@@ -6,25 +6,19 @@ from cabinet.models import cabinet
 from .models import document,document_type,parent_document
 from django.contrib.auth.decorators import login_required,permission_required
 from .forms import *
+from django.core.paginator import Paginator
 
 @login_required
 def index(request):
-    cabinet_list = cabinet.objects.all()
-    document_list=parent_document.objects.all()
 
-    context={'document_list':document_list,'cabinet_list':cabinet_list}
+    document_list=parent_document.objects.all()
+    paginator = Paginator(document_list, 3)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    context={'document_obj':page_obj,}
 
     return render(request, 'document/index.html', context)
 
-@permission_required('auth.delete_user')
-@login_required
-def test(request):
-    cabinet_list = cabinet.objects.all()
-    document_list=parent_document.objects.all()
-
-
-    context={'document_list':document_list,'cabinet_list':cabinet_list}
-    return render(request, 'document/test.html', context)
 
 @permission_required('auth.delete_user')
 @login_required
@@ -52,7 +46,7 @@ def add_decision(request):
     if request.method == 'POST':
         myform = decision_form(request.POST, request.FILES)
         if myform.is_valid():
-            myform.save(commit=False)
+            myform.save()
 
     else:
         myform = decision_form()
@@ -64,7 +58,7 @@ def add_preparator(request):
     if request.method == 'POST':
         myform = preparator_form(request.POST, request.FILES)
         if myform.is_valid():
-            myform.save(commit=False)
+            myform.save()
 
     else:
         myform = preparator_form()
@@ -76,7 +70,7 @@ def add_report(request):
     if request.method == 'POST':
         myform = report_form(request.POST, request.FILES)
         if myform.is_valid():
-            myform.save(commit=False)
+            myform.save()
     else:
         myform = report_form()
     context = {'myform': myform}
