@@ -1,13 +1,13 @@
 from django.conf import settings
 from django.shortcuts import render
-from.models import cabinet
+from.models import managment
 from document.models import parent_document
 import os
 
 
 
 def index1(request):
-    object_list = cabinet.objects.all()
+    object_list = managment.objects.all()
     context = {'object_list': object_list}
 
     return render(request, 'cabinet/index.html', context)
@@ -22,7 +22,7 @@ def show_element(request,Management_name):
             dir_list.append(filename)"""
 
     #ارجاع كل المستندات الموجوده فى قاعدة البيانات الخاصة بالوثائق ووضعها تحت المجلد الخاص بها
-    object_list_from_db=parent_document.objects.filter(select_cabinet__Management_name=Management_name)
+    object_list_from_db=parent_document.objects.filter(select_managment__Management_name=Management_name)
 
     name = Management_name
 

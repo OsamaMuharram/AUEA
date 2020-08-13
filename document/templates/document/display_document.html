@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+  {% block body %}
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+
+    <div class="w3-container">
+    <h1><b>Documents Detail</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <button class="w3-button w3-black">Back</button>
+    </div>
+    </div>
+  </header>
+
+
+<div class="w3-row-padding">
+
+    <div class="w3-third w3-container w3-margin-bottom">
+
+<embed src="{{ obj_detail.file_uploded.url }}"  style="width:100%" >
+
+      <div class="w3-container w3-white">
+        <p><b>{{obj_detail.title}}</b></p>
+        <p>{{obj_detail.description}}</p>
+      </div>
+    </div>
+
+     </div>
+
+
+{% endblock body %}
+

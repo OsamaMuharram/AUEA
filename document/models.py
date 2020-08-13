@@ -1,26 +1,18 @@
 import uuid
 from django.db import models
-from cabinet.models import employee ,cabinet
+from django.utils.text import slugify
+
+from cabinet.models import managment
 # Create your models here.
 def Management_path(instance, filename):
     return '{0}/{1}'.format(instance.select_cabinet, filename)
 
-class document(models.Model):
 
-    name=models.CharField(max_length=100)
-    employee_name = models.ForeignKey('cabinet.employee',
-                                      on_delete=models.CASCADE, )
-    select_cabinet= models.ForeignKey('cabinet.cabinet',
-                                      on_delete=models.CASCADE, )
 
-    file_uploded = models.FileField(upload_to=Management_path)
+class Tags(models.Model):
+    name = models.CharField(max_length=100, unique=True)
+    slug = models.SlugField(max_length=100, unique=True)
 
-    def __str__(self):
-        return str(self.name)
-
-class document_type(models.Model):
-    name = models.CharField(max_length=50)
-    description=models.CharField(max_length=500)
     def __str__(self):
         return str(self.name)
 
@@ -29,13 +21,23 @@ class parent_document(models.Model):
     title = models.CharField(max_length=150)
     description=models.CharField(max_length=500)
     event_date = models.DateField()
-    published = models.DateField(auto_now_add=True)
-    select_cabinet = models.ForeignKey('cabinet.cabinet',
+    published_at= models.DateField(auto_now_add=True)
+    select_managment = models.ForeignKey('cabinet.managment',
                                        on_delete=models.CASCADE, )
+
+    select_tag = models.ManyToManyField('Tags')
     file_uploded = models.FileField(upload_to=Management_path)
+    slug=models.SlugField(blank=True,null=True)
+
+
+    def save(self, *args,**kwargs):
+        self.slug=slugify(self.title)
+        super(parent_document,self).save(*args,**kwargs)
 
     def __str__(self):
         return str(self.title)
+
+
 
     """////////////////////////////////////////"""
     """
@@ -50,7 +52,7 @@ class preparator_document(parent_document):
     create decision_document table 
     """
 class decision_document(parent_document):
-    boss_name=models.CharField(max_length=150)
+    Issuer=models.CharField(max_length=150)
     decision_type=models.CharField(max_length=150)
 
     """
@@ -74,6 +76,6 @@ class report_document(parent_document):
     """
 class warrant_document(parent_document):
     #جهة الاصدار
-    Issuer=models.CharField(max_length=150)
+    Issuer_creator=models.CharField(max_length=150)
     Destination=models.CharField(max_length=150)
 """"///////////////////////////////////////////////"""

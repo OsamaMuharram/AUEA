@@ -10,7 +10,7 @@ urlpatterns = [
     path('add/correspondence/', views.add_correspondence, name='add_correspondence_document'),
     path('add/report/', views.add_report, name='add_report_document'),
     path('add/preparator/', views.add_preparator, name='add_preparator_document'),
-
+    path('display/<int:id>', views.display, name='display_document'),
 
 
 ]

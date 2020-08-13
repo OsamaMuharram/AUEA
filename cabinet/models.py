@@ -4,7 +4,7 @@ import os
 
 # Create your models here.
 
-class cabinet(models.Model):
+class managment(models.Model):
 
     Management_name = models.CharField(max_length=30)
     description = models.CharField(max_length=200)
@@ -12,10 +12,7 @@ class cabinet(models.Model):
     blank=True,
     null=True,)
 
-    employee = models.ForeignKey(
-        'employee',
-        on_delete=models.CASCADE,
-    )
+
     #الحقل الخاص بالمسارات متفرع من branuch from
     Mgment_path = models.CharField(max_length=200,null=True,blank=True )
 
@@ -41,13 +38,5 @@ class cabinet(models.Model):
     def get_absolute_url(self):
         from django.urls import reverse
         return reverse('show_element', args=[str(self.Management_name)])
-
-#كلاس الموظفين
-class employee(models.Model):
-
-    employee_name = models.CharField(max_length=50)
-    def __str__(self):
-
-        return str(self.employee_name)
 
 
