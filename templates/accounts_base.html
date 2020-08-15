@@ -6,26 +6,22 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="{%static 'css/style_1.css'%}">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="{%static 'css/login.css'%}">
+        <link rel="script" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <!------ Include the above in your HEAD tag ---------->
 
-    <ul class="sidebar-nav">
-        ...
+<body>
+      {% block body %}
 
-       {% if user.is_authenticated %}
-         <li>User: {{ user.get_username }}</li>
-         <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
-       {% else %}
-         <li><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>
-       {% endif %}
-      </ul>
-  {% block body %}
+      {% endblock body %}
 
-  {% endblock body %}
-
-
+<script src="{%static 'js/login.js'%}"></script>
 
     </body>
+
+
 </html>

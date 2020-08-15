@@ -1,6 +1,8 @@
 import uuid
 from django.db import models
 from django.utils.text import slugify
+from django.contrib.auth.models import User
+
 
 from cabinet.models import managment
 # Create your models here.
@@ -31,7 +33,8 @@ class parent_document(models.Model):
 
 
     def save(self, *args,**kwargs):
-        self.slug=slugify(self.title)
+        d=self.event_date
+        self.slug=slugify(str(d.year)+str(d.month)+str(self.id))
         super(parent_document,self).save(*args,**kwargs)
 
     def __str__(self):

@@ -28,6 +28,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="{% url 'index'%}" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Documents</a>
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>My Actions</a>
   </div>
+
+    <ul class="sidebar-nav">
 {% if user.is_authenticated %}
          <li> <i class="fa fa-sign-in"></i> <a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
        {% else %}

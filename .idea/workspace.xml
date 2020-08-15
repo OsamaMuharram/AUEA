@@ -11,22 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbf61555-5bc1-464f-87e2-d6d6b74c159f" name="Default Changelist" comment="add html pages">
-      <change afterPath="$PROJECT_DIR$/cabinet/migrations/0002_auto_20200813_0512.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cabinet/migrations/0003_auto_20200813_2154.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/document/migrations/0003_auto_20200813_0429.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/document/migrations/0004_auto_20200813_0433.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/document/templates/document/display_document.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_project_visualized.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cabinet/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/cabinet/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cabinet/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cabinet/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cabinet/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cabinet/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/registration/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/document/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/templates/document/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/document/templates/document/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tags/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tags/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accounts_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accounts_base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597208498890</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="database enhancement">
+      <created>1597361718609</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1597361718609</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -291,7 +289,8 @@
     <MESSAGE value="create initial accounts system" />
     <MESSAGE value="add accounts and permisiions&#10;add forms from documents models&#10;coustmize ui" />
     <MESSAGE value="add paginations and create document type s forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="add paginations and create document type s forms" />
+    <MESSAGE value="database enhancement" />
+    <option name="LAST_COMMIT_MESSAGE" value="database enhancement" />
   </component>
   <component name="WindowStateProjectService">
     <state x="566" y="245" width="408" height="365" key="#Notifications" timestamp="1596726965133">
@@ -310,9 +309,10 @@
       <screen x="0" y="0" width="1366" height="739" />
     </state>
     <state x="187" y="5" key="SettingsEditor/0.0.1366.739@0.0.1366.739" timestamp="1597162392610" />
-    <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2" timestamp="1597116996548">
-      <screen x="0" y="0" width="1366" height="739" />
+    <state x="246" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2" timestamp="1597361768029">
+      <screen x="0" y="0" width="1360" height="739" />
     </state>
+    <state x="246" y="142" key="Vcs.Push.Dialog.v2/0.0.1360.739@0.0.1360.739" timestamp="1597361768029" />
     <state x="247" y="142" width="806" height="526" key="Vcs.Push.Dialog.v2/0.0.1366.739@0.0.1366.739" timestamp="1597116996548" />
     <state x="97" y="99" width="1172" height="543" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596727983958">
       <screen x="0" y="0" width="1366" height="739" />

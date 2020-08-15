@@ -1,40 +1,32 @@
 {% extends "accounts_base.html" %}
 {%load bootstrap4%}
-<div class="container">
+
 
 {% block body %}
-
-  {% if form.errors %}
-    <p>Your username and password didn't match. Please try again.</p>
+<div class="login-page">
+  <div class="form">
+      {% if form.errors %}
+    <p>الرقم القومى او كلمة المرور غير صحيحة الرجاء التأكد من البيانات واعادة المحاولة</p>
   {% endif %}
-  
+
   {% if next %}
     {% if user.is_authenticated %}
-      <p>Your account doesn't have access to this page. To proceed,
-      please login with an account that has access.</p>
+      <p>ليس لديك الصلاحيات للوصول الى هذه الصفحة.</p>
     {% else %}
-      <p>Please login to see this page.</p>
+
     {% endif %}
   {% endif %}
-  
-  <form method="post" action="{% url 'login' %}">
-    {% csrf_token %}
-    <table>
-      <tr>
-        <td>{{ form.username.label_tag }}</td>
-        <td>{{ form.username }}</td>
-      </tr>
-      <tr>
-        <td>{{ form.password.label_tag }}</td>
-        <td>{{ form.password }}</td>
-      </tr>
-    </table>
-    <input type="submit" value="login" />
-    <input type="hidden" name="next" value="{{ next }}" />
-  </form>
 
-  {# Assumes you setup the password_reset view in your URLconf #}
-  <p><a href="{% url 'password_reset' %}">Lost password?</a></p>
+    <form method="post" action="{% url 'login' %}" class="login-form">
+       {% csrf_token %}
+      <label> الرقم القومى</label>
+      {{ form.username }}
+       <label> كلمة المرور</label>
+      {{ form.password }}
 
-
+      <button>تسجيل الدخول</button>
+      <p class="message">هذا التسجيل مخصص فقط للموظفين</p>
+    </form>
+  </div>
+</div>
 {% endblock %}
